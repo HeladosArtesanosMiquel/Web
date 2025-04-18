@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #fafafa;
+  color: #333;
+  background-image: url('optimizada_textura_nieve.jpg');
+  background-repeat: repeat;
+}
+
+.hero-header {
+  background-image: url('miquel-header.png');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+
+@media (max-width: 768px) {
+  .hero-header {
+    height: 200px;
+  }
+}
+
+section {
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+h2 {
+  color: red;
+  border: 2px solid black;
+  padding: 5px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.quienes-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.quienes-content img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+  .quienes-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
