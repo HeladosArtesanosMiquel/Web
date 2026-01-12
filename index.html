@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Helados Artesanos Miquel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f8f8;
+      color: #5a4233;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('Fondo.jpg') no-repeat center center;
+      background-size: cover;
+      opacity: 0.15;
+      z-index: -1;
+    }
+
+    header {
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    header img {
+      width: 100%;
+      max-width: 90%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    main {
+      padding: 1rem;
+      max-width: 960px;
+      margin: auto;
+      text-align: center;
+    }
+
+    h2 {
+      font-family: 'Cinzel Decorative', cursive;
+      color: #c00000;
+      text-shadow: 1px 1px 2px black;
+      font-size: 1.4rem;
+      margin-top: 1.5em;
+      margin-bottom: 1.5em;
+    }
+
+    @media screen and (max-width: 767px) {
+      h2 {
+        font-size: 1.2rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-bottom: 1rem;
+      }
+
+      main {
+        padding: 0.8rem;
+      }
+
+      section {
+        margin-bottom: 1.2rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+
+      iframe {
+        height: 200px;
+      }
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      margin-bottom: 1.5em;
+    }
+
+    p {
+      max-width: 800px;
+      margin: auto;
+      font-size: 1.125rem;
+      line-height: 1.6;
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 8px;
+    }
+
+    footer {
+      background: #f0f0f0;
+      padding: 1em;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #555;
+      margin-top: 3rem;
+    }
+  </style>
+
+<style>
+  .icono-red {
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  .icono-red:hover {
+    transform: scale(1.3);
+    filter: brightness(1.3);
+  }
+</style>
+
+<style>
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+  #mensaje-exito {
+    animation: pulse 0.4s ease-in-out 2;
+  }
+</style>
+
+<style>
+  img.hover-lightbox {
+    transition: transform 0.3s ease, filter 0.3s ease;
+    cursor: zoom-in;
+  }
+  img.hover-lightbox:hover {
+    transform: scale(1.05);
+    filter: brightness(1.15);
+  }
+</style>
+
+<style>
+  button:hover {
+    transform: scale(1.05);
+    background-color: #a00000;
+    transition: all 0.3s ease;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <img class="hover-lightbox" class="hover-efecto" src="./Encabezado.png" alt="Helados Artesanos Miquel" />
+  </header>
+
+  <main>
+    <section class="sobre-nosotros">
+      <h2>Sobre Nosotros</h2>
+      <img class="hover-lightbox" src="./Sobre_nosotros_renamed.jpg" alt="Historia familiar" />
+      <p>Desde 1946, Helados Artesanos Miquel representa la tradición, el sabor y el amor por el oficio en El Viso del Alcor.
+        Lo que comenzó como un sueño familiar, hoy continúa con la cuarta generación al frente, conservando intacto el
+        compromiso con la calidad y la elaboración artesanal.</p>
+    </section>
+
+    <section class="publicaciones">
+  <h2>Últimas Publicaciones</h2>
+  <p>Mira nuestras novedades más recientes en Instagram:</p>
+  <!-- SnapWidget -->
+  <iframe
+    src="https://snapwidget.com/embed/1094149"
+    class="snapwidget-widget"
+    allowtransparency="true"
+    frameborder="0"
+    scrolling="no"
+    style="border:none; overflow:hidden; width:100%; aspect-ratio: 1 / 1; max-height: 765px;"
+    title="Posts from Instagram">
+  </iframe>
+</section>
+
+    <section class="horarios">
+      <h2>Horarios</h2>
+      <p>Lunes a Viernes: 9:00 - 00:00</p>
+      <p>Sábado y Domingo: 10:00 - 1:00</p>
+    </section>
+
+    <h2>Ubicación / Mapa</h2>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.9138417045723!2d-5.717300084509225!3d37.38826794147264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1289da2e446443%3A0x5be0f6cb29224b16!2sHelados%20Artesanos%20Miquel!5e0!3m2!1ses!2ses!4v1614557849812!5m2!1ses!2ses"
+      allowfullscreen="" loading="lazy"></iframe>
+
+    
+<section class="contacto">
+  <h2>Redes Sociales y Contacto</h2>
+  <p>Síguenos y contáctanos:</p>
+
+  <div style="font-size: 2.2rem; margin: 1em 0;">
+    <a href="https://www.instagram.com/heladosartesanosmiquel" target="_blank" style="margin: 0 10px; color: #c00000;"><i class="fab fa-instagram icono-red"></i></a>
+    <a href="https://www.facebook.com/share/19aZKspcWe/" target="_blank" style="margin: 0 10px; color: #3b5998;"><i class="fab fa-facebook icono-red"></i></a>
+    <a href="https://wa.me/34955945270" target="_blank" style="margin: 0 10px; color: #25D366;"><i class="fab fa-whatsapp icono-red"></i></a>
+    <a href="mailto:heladosartesanosmiquel@hotmail.com" target="_blank" style="margin: 0 10px; color: #c00000;"><i class="fas fa-envelope icono-red" title="Enviar correo"></i></a>
+  </div>
+
+  
+
+  <form id="contact-form" action="https://formspree.io/f/xzzrpvjn" method="POST" style="max-width: 500px; margin: auto; text-align: left;">
+    <label for="name">Nombre:</label><br>
+    <input type="text" name="name" required style="width: 100%; padding: 8px; margin-bottom: 10px;"><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" name="email" required style="width: 100%; padding: 8px; margin-bottom: 10px;"><br>
+
+    <label for="message">Mensaje:</label><br>
+    <textarea name="message" rows="4" required style="width: 100%; padding: 8px; margin-bottom: 10px;"></textarea><br>
+
+    <button type="submit" style="padding: 10px 20px; background-color: #c00000; color: white; border: none; cursor: pointer;"><i class="fas fa-paper-plane" style="margin-right: 8px;"></i>Enviar</button>
+  </form>
+
+  <p id="mensaje-exito" style="display: none; text-align: center; margin-top: 1em; color: green; font-weight: bold;">
+    ¡Gracias por contactarnos! Te responderemos en breve.
+  </p>
+</section>
+
+<script>
+  const form = document.getElementById("contact-form");
+  const mensaje = document.getElementById("mensaje-exito");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const formData = new FormData(form);
+
+    fetch(form.action, {
+      method: "POST",
+      body: formData,
+      headers: { 'Accept': 'application/json' }
+    }).then(response => {
+      if (response.ok) {
+        form.reset();
+        mensaje.style.display = "block";
+        setTimeout(() => {
+          mensaje.style.display = "none";
+        }, 6000);
+      } else {
+        alert("Hubo un error. Intenta de nuevo.");
+      }
+    }).catch(() => alert("No se pudo enviar el formulario."));
+  });
+</script>
+
+  </main>
+
+  <footer>
+    &copy; 2025 Helados Artesanos Miquel. Todos los derechos reservados.
+  </footer>
+
+  <script>
+    document.getElementById("contact-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const form = e.target;
+      const formData = new FormData(form);
+      const mensaje = document.getElementById("mensaje-exito");
+
+      fetch("https://formsubmit.co/heladosartesanosmiquel@hotmail.com", {
+        method: "POST",
+        body: formData
+      }).then(response => {
+        if (response.ok) {
+          form.reset();
+          mensaje.style.display = "block";
+          setTimeout(() => {
+            mensaje.style.opacity = "1";
+          }, 50);
+          setTimeout(() => {
+            mensaje.style.opacity = "0";
+            setTimeout(() => {
+              mensaje.style.display = "none";
+            }, 800);
+          }, 5000);
+        } else {
+          alert("Hubo un error al enviar el mensaje. Inténtalo de nuevo más tarde.");
+        }
+      }).catch(() => {
+        alert("No se pudo enviar el formulario.");
+      });
+    });
+  </script>
+
+<style>
+  .lightbox-overlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  .lightbox-overlay.active {
+    display: flex;
+  }
+  .lightbox-overlay img {
+    max-width: 90%;
+    max-height: 90%;
+    border: 5px solid white;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  }
+</style>
+
+</body>
+</html>
+
+<style>
+  .lightbox-overlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  .lightbox-overlay.active {
+    display: flex;
+  }
+  .lightbox-overlay img {
+    max-width: 90%;
+    max-height: 90%;
+    border: 5px solid white;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  }
+</style>
+
+<div id="lightbox" class="lightbox-overlay" onclick="this.classList.remove('active')">
+  <img id="lightbox-img" src="" alt="Imagen ampliada">
+</div>
+
+<script>
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+
+  const aboutImg = document.querySelector('.sobre-nosotros img');
+  const logoImg = document.querySelector('header img');
+
+  if (aboutImg) {
+    aboutImg.style.cursor = 'zoom-in';
+    aboutImg.addEventListener('click', () => {
+      lightboxImg.src = aboutImg.src;
+      lightbox.classList.add('active');
+    });
+  }
+
+  if (logoImg) {
+    logoImg.style.cursor = 'zoom-in';
+    logoImg.addEventListener('click', () => {
+      lightboxImg.src = logoImg.src;
+      lightbox.classList.add('active');
+    });
+  }
+</script>
